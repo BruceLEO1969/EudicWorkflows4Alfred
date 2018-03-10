@@ -65,9 +65,12 @@
 
 # Open &amp; Active Eudb App
 do shell script "open /Applications/Eudic.app"
+delay 0.2
+do shell script "open /Applications/Eudic.app"
 
 # Paste query to input box
 tell application "System Events" to tell process "EuDic"
+	delay 0.3
 	keystroke "a" using command down
 	keystroke "v" using command down
 	keystroke return
@@ -116,7 +119,7 @@ ch word
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/BruceLEO1969/EudicWorkflows4Alfred</string>
 </dict>
